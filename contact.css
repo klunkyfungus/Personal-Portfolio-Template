@@ -1,0 +1,106 @@
+
+main {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 2.5rem;
+    bottom: 5.2rem;
+    background-color: rgba(255, 149, 0, .3);
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 2rem 0rem 2rem 3rem;
+    min-height: fit-content;
+  }
+  
+  #contact-info h2 {
+    margin-bottom: 2rem;
+  }
+  
+  #contact-info {
+    border-right: 3px double rgb(255, 149, 0);
+  }
+  
+  section img{
+    max-width: 28rem;
+    max-height: 35rem;
+    border-radius: 5rem;
+    align-self: center;
+    margin-right: 3rem;
+  }
+  
+  section ul {
+    list-style-type: none;
+    align-self: center;
+    margin: 2rem 3rem 0 0;
+  }
+
+  section span {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  section li {
+    margin-bottom: 2rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    margin-right: 3rem;
+  }
+
+  input {
+    width: 20rem;
+    border-color: rgb(255, 149, 0);
+  }
+
+  #phone {
+    width: 133px;
+  }
+
+  input, textarea {
+    margin-bottom: 2rem;
+    border-color: rgb(255, 149, 0);
+  }
+
+  #attachment {
+    margin-bottom: 0;
+  }
+
+  #submit {
+    align-self: center;
+    width: fit-content;
+    padding: 1rem 2rem;
+    color: aliceblue;
+    background-color: rgb(255,90,8);
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    margin-top: 2rem;
+  }
+  
+  #submit:hover {
+    position: relative;
+    cursor: pointer;
+    border: 2px outset rgb(255,191,0);
+    margin-top: 28px;
+    top: 2px;
+  }
+
+  #submit:active {
+    border: none;
+    margin-top: 2rem;
+    position: static;
+  }
+  
+  footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
