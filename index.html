@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./animation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Klunky's Portfolio</title>
 </head>
 <body>
@@ -23,12 +26,12 @@
             </ul>
         </nav>
     </header>
-    <div id="banner">
+    <div id="banner" class="fade">
         <div id="black-overlay"></div>
         <h1>Full-Stack Developer KlunkyFungus</h1>
-        <span>Creating elegant solutions with crafty ideas and dogged perseverance</span>
+        <span>Elegant solutions by virtue of crafty ideas and dogged perseverance</span>
     </div>
-    <section id="skills">
+    <section id="skills" class="fade">
         <h2>Skills</h2>
         <ul id="skills-list">
             <li id="html"><img src="./assets/icons8-html-5-48.png" alt="">HTML</li>
@@ -37,14 +40,14 @@
             <li id="git"><img src="./assets/Git-Icon-White.png" alt="">Git Devops</li>
         </ul>
     </section>
-    <section id="latest-projects">
+    <section id="latest-projects" class="fade">
         <div id="latest-projects-header">
             <h2>Latest Projects</h2>
             <span><a href="">See All Projects</a></span>
         </div>
         <ul>
-            <li>Mixed Messages</li>
-            <li>Responsive Website</li>
+            <li id="mm-button">Mixed Messages</li>
+            <li id="rw-button">Responsive Website</li>
         </ul>
         <div id="project-info">
             <p id="mixed-messages-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -54,7 +57,7 @@
             <img id="responsive-web-preview" src="./assets/responsive-website.PNG" alt="">
         </div>
     </section>
-    <section id="about-me">
+    <section id="about-me" class="fade">
         <h2>About Me/Experience</h2>
         <div id="personal-info">
             <img id="headshot" src="./assets/ian-merzwinski-1q9-yDb1DdM-unsplash.jpg" alt="">
@@ -62,8 +65,10 @@
         </div>
         </section>
     <footer>
-        <button>Contact Me</button>
+        <a href="./contact.html" target="_blank"><button>Contact Me</button></a>
         <span>Made by KlunkyFungus - 2023</span>
     </footer>
+    <script src="./initial.js" async></script>
+    <script src="./main.js" defer></script>
 </body>
 </html>

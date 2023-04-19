@@ -1,9 +1,14 @@
+#logo-container a:hover {
+    animation: 1.5s icon-dance 1 both;
+    animation-delay: 0s;
+}
+
 #home::after {
     content: '';
     position: fixed;
     top: 1.75rem;
-    right: 280px;
-    width: 43px;
+    right: 303.5px;
+    width: 48px;
     height: 1px;
     background-color: aliceblue;
     transform-origin: bottom right;
@@ -21,8 +26,8 @@
     content: '';
     position: fixed;
     top: 1.75rem;
-    right: 195.5px;
-    width: 55px;
+    right: 210px;
+    width: 63px;
     height: 1px;
     background-color: aliceblue;
     transform-origin: bottom right;
@@ -40,8 +45,8 @@
     content: '';
     position: fixed;
     top: 1.75rem;
-    right: 97px;
-    width: 69px;
+    right: 105px;
+    width: 76.5px;
     height: 1px;
     background-color: aliceblue;
     transform-origin: bottom right;
@@ -59,8 +64,8 @@
     content: '';
     position: fixed;
     top: 1.75rem;
-    right: 14px;
-    width: 53px;
+    right: 15px;
+    width: 59.5px;
     height: 1px;
     background-color: aliceblue;
     transform-origin: bottom right;
@@ -79,7 +84,7 @@
     position: absolute;
     top: 62.75rem;
     right: 14px;
-    width: 107px;
+    width: 117px;
     height: 1px;
     background-color: blue;
     transform-origin: bottom right;
@@ -93,15 +98,35 @@
     transform-origin: bottom left;
 }
 
-@keyframes appear {
-    from {
-        opacity: 0;
+@keyframes icon-dance {
+    0% {
+        transform: skewX(0deg);
     }
-    to {
-        opacity: 1;
+    25% {
+        transform: skewX(25deg);
+    }
+    50% {
+        transform: skewX(-25deg);
+    }
+    75% {
+        transform: skewX(25deg);
+    }
+    100% {
+        transform: skewX(0deg);
     }
 }
 
-#mixed-messages-para, #responsive-web-para, #mixed-messages-preview, #responsive-web-preview, #divider{
+@keyframes appear {
+    from {
+        opacity: 0;
+        
+    }
+    to {
+        opacity: 1;
+        
+    }
+}
+
+.fade, #mixed-messages-para, #responsive-web-para, #mixed-messages-preview, #responsive-web-preview, #divider{
     animation: 3s appear both 1;
 }
