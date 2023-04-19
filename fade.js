@@ -13,8 +13,8 @@ const animateThese = arr => {
         let elemOpacity = element.style.opacity;
         let animation = element.getAnimations({ subtree: true })[0];
         console.log(animation);
-        if (rect.y > viewPortHeight) {
-            //Cancel animation if element is not in viewport
+        if (rect.y > viewPortHeight || rect.bottom < 0) {
+            //Cancel animation if element is not in viewport and ensure it stays invisible
             animation.finish();
             let elemOpacity = element.style.opacity = 0;
         } else if (rect.y < viewPortHeight && elemOpacity == 0) {
@@ -32,10 +32,9 @@ const initialFadeIn = () => {
 
 const fadeIn = () => {
     let hiddenFaders = initialFadersArr.filter(element => element.style.opacity < 1);
-    console.log(hiddenFaders[0].getAnimations);
     animateThese(hiddenFaders);
     if (hiddenFaders[0] == undefined) {
-        document.removeEventListener("scroll", fadeIn, true);
+        document.removeEventListener("scroll", fadeIn);
     }
 };
 
