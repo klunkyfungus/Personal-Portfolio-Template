@@ -28,32 +28,31 @@
             </ul>
         </nav>
     </header>
-    <main class="fade">
-        <section id="contact-info">
-            <h2>Contact Information</h2>
-            <img src="./assets/marcos-paulo-prado-JTKDi-OPQNo-unsplash.jpg" alt="">
-            <ul>
-                <li><span>Email:</span> Lorem@ipsum.com</li>
-                <li><span>Phone #:</span> +1-222-333-4444</li>
-            </ul>
-        </section>
-        <section id="leave-message">
-            <h2>Leave a Message</h2>
-            <form action="./contact_submittal.html" method="get">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="email">Your Phone #:</label>
-                <input type="tel" id="phone" name="phone">
-                <label for="message">Message:</label>
-                <textarea name="message" id="message" cols="30" rows="5" placeholder="Please type your message here..."></textarea>
-                <label for="attachment">Attachments:</label>
-                <input type="file" id="attachment" name="attachment">
-                <input type="submit" id="submit" value="Submit">
-            </form>
-        </section>
-    </main>
+    <section id="contact-info" class="fade">
+        <h2>Contact Information</h2>
+        <img src="./assets/marcos-paulo-prado-JTKDi-OPQNo-unsplash.jpg" alt="">
+        <ul>
+            <li><span>Email:</span> Lorem@ipsum.com</li>
+            <li><span>Phone #:</span> +1-222-333-4444</li>
+        </ul>
+    </section>
+    <div id="divider-2"></div>
+    <section id="leave-message" class="fade">
+        <h2>Leave a Message</h2>
+        <form action="./contact_submittal.html" method="get">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" pattern="\D{2,}(\s\D{2,}){0,}" placeholder="i.e. Jane Doe" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" pattern=".+@\w+\.\w{2,}" placeholder="i.e. email@host.com" required>
+            <label for="email">Your Phone #:</label>
+            <input type="tel" id="phone" name="phone" pattern="\+?\d{10,15}" placeholder="i.e. 1341234124ext.1234 or +911231231234">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Please type your message here..." required></textarea>
+            <label for="attachment">Attachments:</label>
+            <input type="file" id="attachment" name="attachment">
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </section>    
     <footer class="fade">
         <span>Made by KlunkyFungus - 2023</span>
     </footer>
