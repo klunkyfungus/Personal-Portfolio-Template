@@ -251,17 +251,24 @@ nav a:active {
      display: none;
      align-items: center;
      text-align: center;
+     margin: 0 .5rem;
      opacity: 0;
+     color: white;
+     padding: 1rem;
+     box-shadow: 4px 4px 3px rgba(128,128,128, .7);
+     border-radius: 4rem;
+     background-color: rgba(255,90,8,.8);
  }
 
  #divider {
     grid-area: d;
     height: auto;
     width: 1.5rem;
-    border-right: 3px double rgb(255, 149, 0);
+    border-right: 3px double rgba(128,128,128, 0.7);
     margin: 1rem 0;
     opacity: 0;
     display: none;
+    visibility: hidden;
  }
  
  #mixed-messages-preview, #responsive-web-preview {
@@ -270,6 +277,8 @@ nav a:active {
      height: 23.175rem;
      opacity: 0;
      display: none;
+     border-radius: 4rem;
+     box-shadow: 4px 4px 3px rgba(128,128,128, .7);
  }
 
 #about-me {
@@ -364,9 +373,9 @@ button:active {
     #divider {
     height: 0rem;
     width: auto;
-    border-top: 3px double rgb(255, 149, 0);
+    border-top: 3px double rgba(128,128,128, 0.7);
     border-right: none;
-    margin: 2rem 4rem 3rem 4rem;
+    margin: 2rem 4rem;
     }
     
     #project-info {
@@ -470,6 +479,10 @@ button:active {
     
     button {
         margin-top: 1rem;
+    }
+    
+    button:hover {
+        margin-top: .8rem;
     }
  
  footer span{
