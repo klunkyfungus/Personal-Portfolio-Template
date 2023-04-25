@@ -128,3 +128,40 @@
 .fade, #mixed-messages-para, #responsive-web-para, #mixed-messages-preview, #responsive-web-preview, #divider{
     animation: 3s appear both 1;
 }
+
+@media only screen and (max-width: 752px) {
+    #latest-projects-header span a::after {
+        top: 60.35rem;
+    }
+}
+
+@media only screen and (max-width: 609px) {
+    #latest-projects-header span a::after {
+        top: 66.75rem;
+    }
+}
+
+@media only screen and (max-width: 443px) {
+    #home::after {
+    top: 1.75rem;
+    right: 219px;
+}
+    
+    #projects::after {
+    top: 1.75rem;
+    right: 150.6px;
+}
+    
+    #about::after {
+    top: 1.75rem;
+    right: 70px;
+}
+    
+    #contact::after {
+    content: '';
+    position: fixed;
+    top: 1.75rem;
+    right: 3.8px;
+}
+    
+}
