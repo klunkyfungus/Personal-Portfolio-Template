@@ -1,6 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 #logo-container a:hover {
-    animation: 1.5s icon-dance 1 both;
-    animation-delay: 0s;
+    -webkit-animation: 1.5s icon-dance 1 both;
+            animation: 1.5s icon-dance 1 both;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
 }
 
 #home::after {
@@ -11,15 +20,27 @@
     width: 48px;
     height: 1px;
     background-color: aliceblue;
-    transform-origin: bottom right;
+    -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+            transform-origin: bottom right;
+    -webkit-transition: -webkit-transform .25s ease-out;
+    transition: -webkit-transform .25s ease-out;
+    -o-transition: transform .25s ease-out;
     transition: transform .25s ease-out;
-    transform: scaleX(0);
+    transition: transform .25s ease-out, -webkit-transform .25s ease-out;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
     z-index: 3;
 }
 
 #home:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
 }
 
 #projects::after {
@@ -30,15 +51,27 @@
     width: 63px;
     height: 1px;
     background-color: aliceblue;
-    transform-origin: bottom right;
+    -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+            transform-origin: bottom right;
+    -webkit-transition: -webkit-transform .25s ease-out;
+    transition: -webkit-transform .25s ease-out;
+    -o-transition: transform .25s ease-out;
     transition: transform .25s ease-out;
-    transform: scaleX(0);
+    transition: transform .25s ease-out, -webkit-transform .25s ease-out;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
     z-index: 3;
 }
 
 #projects:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
 }
 
 #about::after {
@@ -49,15 +82,27 @@
     width: 76.5px;
     height: 1px;
     background-color: aliceblue;
-    transform-origin: bottom right;
+    -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+            transform-origin: bottom right;
+    -webkit-transition: -webkit-transform .25s ease-out;
+    transition: -webkit-transform .25s ease-out;
+    -o-transition: transform .25s ease-out;
     transition: transform .25s ease-out;
-    transform: scaleX(0);
+    transition: transform .25s ease-out, -webkit-transform .25s ease-out;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
     z-index: 3;
 }
 
 #about:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
 }
 
 #contact::after {
@@ -68,15 +113,27 @@
     width: 59.5px;
     height: 1px;
     background-color: aliceblue;
-    transform-origin: bottom right;
+    -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+            transform-origin: bottom right;
+    -webkit-transition: -webkit-transform .25s ease-out;
+    transition: -webkit-transform .25s ease-out;
+    -o-transition: transform .25s ease-out;
     transition: transform .25s ease-out;
-    transform: scaleX(0);
+    transition: transform .25s ease-out, -webkit-transform .25s ease-out;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
     z-index: 3;
 }
 
 #contact:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
 }
 
 #latest-projects-header span a::after {
@@ -87,32 +144,81 @@
     width: 117px;
     height: 1px;
     background-color: blue;
-    transform-origin: bottom right;
+    -webkit-transform-origin: bottom right;
+        -ms-transform-origin: bottom right;
+            transform-origin: bottom right;
+    -webkit-transition: -webkit-transform .25s ease-out;
+    transition: -webkit-transform .25s ease-out;
+    -o-transition: transform .25s ease-out;
     transition: transform .25s ease-out;
-    transform: scaleX(0);
+    transition: transform .25s ease-out, -webkit-transform .25s ease-out;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
     z-index: 0;
 }
 
 #latest-projects-header span a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+            transform-origin: bottom left;
+}
+
+@-webkit-keyframes icon-dance {
+    0% {
+        -webkit-transform: skewX(0deg);
+                transform: skewX(0deg);
+    }
+    25% {
+        -webkit-transform: skewX(25deg);
+                transform: skewX(25deg);
+    }
+    50% {
+        -webkit-transform: skewX(-25deg);
+                transform: skewX(-25deg);
+    }
+    75% {
+        -webkit-transform: skewX(25deg);
+                transform: skewX(25deg);
+    }
+    100% {
+        -webkit-transform: skewX(0deg);
+                transform: skewX(0deg);
+    }
 }
 
 @keyframes icon-dance {
     0% {
-        transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+                transform: skewX(0deg);
     }
     25% {
-        transform: skewX(25deg);
+        -webkit-transform: skewX(25deg);
+                transform: skewX(25deg);
     }
     50% {
-        transform: skewX(-25deg);
+        -webkit-transform: skewX(-25deg);
+                transform: skewX(-25deg);
     }
     75% {
-        transform: skewX(25deg);
+        -webkit-transform: skewX(25deg);
+                transform: skewX(25deg);
     }
     100% {
-        transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+                transform: skewX(0deg);
+    }
+}
+
+@-webkit-keyframes appear {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1;   
     }
 }
 
@@ -126,7 +232,8 @@
 }
 
 .fade, #mixed-messages-para, #responsive-web-para, #mixed-messages-preview, #responsive-web-preview, #divider{
-    animation: 3s appear both 1;
+    -webkit-animation: 3s appear both 1;
+            animation: 3s appear both 1;
 }
 
 @media only screen and (max-width: 752px) {

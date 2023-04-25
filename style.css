@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
     margin: 0;
     padding: 0; 
@@ -16,20 +23,28 @@
      left: 0;
      height: .625rem;
      width: 100%;
-     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.8);
+     -webkit-box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.8);
+             box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.8);
  }
  
  header {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     justify-content: space-between;
+     -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
+             justify-content: space-between;
      height: 2.5rem;
-     align-items: center;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
      background-color: rgb(255, 149, 0);
      position: fixed;
      width: 100%;
      top: 0; 
      z-index: 3;
-     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.8);
+     -webkit-box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.8);
+             box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.8);
  }
  
  header span {
@@ -41,16 +56,26 @@
  }
 
 #logo-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     width: 4rem;
     margin-left: 1rem;
 }
 
 #logo-container a {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-decoration: none;
 }
 
@@ -61,6 +86,8 @@
 }
  
  nav ul{
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
      list-style-type: none;
  }
@@ -92,9 +119,16 @@ nav a:active {
 #banner {
      margin-top: 2.5rem;
      height: 43rem;
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     flex-direction: column;
-     justify-content: center;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
      background-image: url(./assets/tamarcus-brown-29pFbI_D1Sc-unsplash.jpg);
      background-position: top;
      background-size: cover;
@@ -134,10 +168,19 @@ nav a:active {
  }
  
  #skills {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     align-items: center;
-     flex-direction: column;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
      background-color: rgb(255, 149, 0);
+     height: -webkit-fit-content;
+     height: -moz-fit-content;
      height: fit-content;
  }
  
@@ -150,17 +193,27 @@ nav a:active {
  
  #skills ul {
      width: 100%;
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     justify-content: center;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
      margin: 2.75rem 0;
  }
  
  #skills li {
      list-style-type: none;
      padding: 2rem 0rem;
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     align-items: center;
-     justify-content: center;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
      background-color: rgba(0, 0, 0, .05);
      border: 0px dotted grey;
      color: aliceblue;
@@ -183,8 +236,12 @@ nav a:active {
 }
  
  #latest-projects-header {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     align-items: baseline;
+     -webkit-box-align: baseline;
+         -ms-flex-align: baseline;
+             align-items: baseline;
      padding: 2.5rem 0 .25rem 0;
  }
  
@@ -214,6 +271,8 @@ nav a:active {
  #latest-projects ul {
      width: 100%;
      list-style-type: none;
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
  }
  
@@ -230,37 +289,53 @@ nav a:active {
 }
  
  #project-info {
+     display: -ms-grid;
      display: grid;
+     width: -webkit-fit-content;
+     width: -moz-fit-content;
      width: fit-content;
+     height: -webkit-fit-content;
+     height: -moz-fit-content;
      height: fit-content;
      max-height: 770px;
      margin: 0 3.5% 0 11.5%;
-     grid-template-areas: 
+         grid-template-areas: 
          ". d ."
          "p d i"
          ". d .";
      
+     -ms-grid-rows: .5fr 4fr .5fr;
+     
      grid-template-rows: .5fr 4fr .5fr;
+     -ms-grid-columns: 3.5fr .5fr 6fr;
      grid-template-columns: 3.5fr .5fr 6fr;
  }
  
  #mixed-messages-para, #responsive-web-para {
+     -ms-grid-row: 2;
+     -ms-grid-column: 1;
      grid-area: p;
      width: auto;
      height: auto;
      display: none;
-     align-items: center;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
      text-align: center;
      margin: 0 .5rem;
      opacity: 0;
      color: white;
      padding: 1rem;
-     box-shadow: 4px 4px 3px rgba(128,128,128, .7);
+     -webkit-box-shadow: 4px 4px 3px rgba(128,128,128, .7);
+             box-shadow: 4px 4px 3px rgba(128,128,128, .7);
      border-radius: 4rem;
      background-color: rgba(255,90,8,.8);
  }
 
  #divider {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
     grid-area: d;
     height: auto;
     width: 1.5rem;
@@ -272,13 +347,16 @@ nav a:active {
  }
  
  #mixed-messages-preview, #responsive-web-preview {
+     -ms-grid-row: 2;
+     -ms-grid-column: 3;
      grid-area: i;
      width: auto;
      height: 23.175rem;
      opacity: 0;
      display: none;
      border-radius: 4rem;
-     box-shadow: 4px 4px 3px rgba(128,128,128, .7);
+     -webkit-box-shadow: 4px 4px 3px rgba(128,128,128, .7);
+             box-shadow: 4px 4px 3px rgba(128,128,128, .7);
  }
 
 #about-me {
@@ -293,8 +371,12 @@ nav a:active {
  }
  
  #personal-info {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     justify-content: space-evenly;
+     -webkit-box-pack: space-evenly;
+         -ms-flex-pack: space-evenly;
+             justify-content: space-evenly;
      margin-top: 3rem;
  }
  
@@ -308,20 +390,32 @@ nav a:active {
      width: 40%;
      margin: 0 0rem 0 0rem;
      height: 25rem;
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     align-items: center;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
  }
  
  footer{
      height: 5.2rem;
      background-color: rgb(255, 149, 0);
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     align-items: center;
-     justify-content: center;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
  }
  
  footer span{
-     align-self: end;
+     -ms-flex-item-align: end;
+         -ms-grid-row-align: end;
+         align-self: end;
      position: absolute;
      right: .5%;
  }
@@ -380,29 +474,62 @@ button:active {
     
     #project-info {
         margin: 0 2.5% 1.5rem 2.5%;
-        grid-template-areas: 
+            grid-template-areas: 
          ". p ."
          "d d d"
          ". i .";
         
+        -ms-grid-columns: .5fr 4fr .5fr;
+        
         grid-template-columns: .5fr 4fr .5fr;
+        -ms-grid-rows: 3.5fr .5fr 6fr;
         grid-template-rows: 3.5fr .5fr 6fr;
         max-height: 650px;
     }
     
      #mixed-messages-para, #responsive-web-para {
-     align-self: end;
+     -ms-flex-item-align: end;
+         -ms-grid-row-align: end;
+         align-self: end;
  }
     
     #mixed-messages-preview, #responsive-web-preview {
+     -ms-grid-row: 2;
+     -ms-grid-column: 3;
      grid-area: i;
      max-width: 100%;
      max-height: 100%;
-     justify-self: center;
+     -ms-grid-column-align: center;
+         justify-self: center;
  }
+    
+    @media only screen and (max-width: 1161px) {
+    
+    #mixed-messages-preview, #responsive-web-preview {
+            -ms-grid-row: 3;
+            -ms-grid-column: 2;
+    }
+    }
     
     #latest-projects li {
         margin-bottom: 1rem;
+    }
+    
+    #mixed-messages-para, #responsive-web-para {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+    
+    #divider {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+    
+    #mixed-messages-preview, #responsive-web-preview {
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
     }
 }
 
@@ -414,9 +541,16 @@ button:active {
     #banner {
      margin-top: 2.5rem;
      height: 43rem;
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     flex-direction: column;
-     justify-content: center;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
      background-image: url(./assets/tamarcus-brown-29pFbI_D1Sc-unsplash.jpg);
      background-position: right;
      background-size: cover;
@@ -434,7 +568,8 @@ button:active {
     }
     
      #skills ul {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         margin: 2.25rem 0;
     }
     
@@ -450,10 +585,19 @@ button:active {
     }
     
      #personal-info {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     flex-direction: column;
-     justify-content: space-evenly;
-     align-items: center;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+     -webkit-box-pack: space-evenly;
+         -ms-flex-pack: space-evenly;
+             justify-content: space-evenly;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
      margin-top: 3rem;
  }
     
@@ -467,13 +611,18 @@ button:active {
  #about-me-text {
      width: 80%;
      margin-top: 3rem;
+     height: -webkit-fit-content;
+     height: -moz-fit-content;
      height: fit-content;
      text-align: center;
  }
     
     footer{
      height: 7rem;
-     flex-direction: column;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
      
  }
     
