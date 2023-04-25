@@ -314,6 +314,8 @@ nav a:active {
  #mixed-messages-para, #responsive-web-para {
      -ms-grid-row: 2;
      -ms-grid-column: 1;
+     grid-row: 2;
+    grid-column: 1;
      grid-area: p;
      width: auto;
      height: auto;
@@ -336,6 +338,8 @@ nav a:active {
     -ms-grid-row: 1;
     -ms-grid-row-span: 3;
     -ms-grid-column: 2;
+    grid-row: 1;
+    grid-column: 2;
     grid-area: d;
     height: auto;
     width: 1.5rem;
@@ -349,6 +353,8 @@ nav a:active {
  #mixed-messages-preview, #responsive-web-preview {
      -ms-grid-row: 2;
      -ms-grid-column: 3;
+     grid-row: 2;
+    grid-column: 3;
      grid-area: i;
      width: auto;
      height: 23.175rem;
@@ -496,6 +502,8 @@ button:active {
     #mixed-messages-preview, #responsive-web-preview {
      -ms-grid-row: 2;
      -ms-grid-column: 3;
+     grid-row: 2;
+     grid-column: 3;
      grid-area: i;
      max-width: 100%;
      max-height: 100%;
@@ -508,6 +516,8 @@ button:active {
     #mixed-messages-preview, #responsive-web-preview {
             -ms-grid-row: 3;
             -ms-grid-column: 2;
+            grid-row: 3;
+            grid-column: 2;
     }
     }
     
@@ -518,6 +528,9 @@ button:active {
     #mixed-messages-para, #responsive-web-para {
         -ms-grid-row: 1;
         -ms-grid-column: 2;
+        grid-row: 1;
+        grid-column: 2;
+        
     }
     
     #divider {
@@ -525,11 +538,15 @@ button:active {
         -ms-grid-row-span: 1;
         -ms-grid-column: 1;
         -ms-grid-column-span: 3;
+        grid-row: 2;
+        grid-column: 1;
     }
     
     #mixed-messages-preview, #responsive-web-preview {
         -ms-grid-row: 3;
         -ms-grid-column: 2;
+        grid-row: 3;
+        grid-column: 2;
     }
 }
 
