@@ -144,24 +144,24 @@
 @media only screen and (max-width: 443px) {
     #home::after {
     top: 1.75rem;
-    right: 219px;
+    right: 223px;
 }
     
     #projects::after {
     top: 1.75rem;
-    right: 150.6px;
+    right: 153.6px;
 }
     
     #about::after {
     top: 1.75rem;
-    right: 70px;
+    right: 74px;
 }
     
     #contact::after {
     content: '';
     position: fixed;
     top: 1.75rem;
-    right: 3.8px;
+    right: 7.8px;
 }
     
 }

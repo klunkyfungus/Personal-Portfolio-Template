@@ -9,7 +9,7 @@ section {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 4.5rem 0rem 7.2rem 3rem;
+  margin: 4.5rem 0rem 4.5rem 3rem;
   min-height: fit-content;
 }
 
@@ -100,9 +100,73 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+  height: 1.5rem;
+}
+
+footer span {
+  margin: 0;
 }
 
 #thanks {
   align-self: center;
   margin: auto 0;
+}
+
+@media only screen and (max-width: 920px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  section {
+    width: 100%;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  section, section img {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  #contact-info {
+    border-right: none;
+    border-bottom: 3px double rgb(255, 149, 0);
+    padding-bottom: 3rem;
+    margin-bottom: 0rem;
+  }
+  
+  #contact-info ul {
+    margin: 0;
+  }
+  
+  #leave-message {
+    margin-top: 3rem;
+  }
+  
+  #leave-message h2 {
+    margin-bottom: 2rem;
+  }
+  
+  form {
+    align-items: start;
+    margin: 0 auto;
+  }
+  
+  textarea {
+    width: 20rem;
+  }
+  
+  #leave-message #thanks {
+    margin: 0;
+  }
+  
+}
+
+@media only screen and (max-width: 443px) {
+  section img {
+    max-height: 28rem;
+  }
 }

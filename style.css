@@ -489,6 +489,10 @@ button:active {
         padding-right: .25rem; 
     }
     
+    #contact {
+        padding-right: .5rem;
+    }
+    
     #about, #projects, #contact {
         padding-left: .25rem;
     }
