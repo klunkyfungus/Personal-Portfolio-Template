@@ -7,7 +7,7 @@ This project is a template for a responsive and interactive personal portfolio w
 ## Usage
 
 Visit the following webpage on a computer, phone, or tablet to try out this website:
-
+https://klunkyfungus.github.io/Personal-Portfolio-Template/index.html
 
 ## Technology Used
 
