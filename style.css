@@ -234,6 +234,10 @@ nav a:active {
     width: 3.75rem;
     margin: 0;
 }
+
+#latest-projects {
+    height: fit-content;
+}
  
  #latest-projects-header {
      display: -webkit-box;
